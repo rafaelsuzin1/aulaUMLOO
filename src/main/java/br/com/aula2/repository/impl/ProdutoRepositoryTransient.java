@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Optional;
 
 import br.com.aula2.model.Produto;
+import br.com.aula2.model.ProdutoId;
+import br.com.aula2.patern.proxy.CollectionProxyFactory;
+import br.com.aula2.patern.proxy.UnmodifiedList;
 import br.com.aula2.repository.ProdutoRepository;
 
 public class ProdutoRepositoryTransient implements ProdutoRepository {
@@ -24,19 +27,22 @@ public class ProdutoRepositoryTransient implements ProdutoRepository {
 			produtos.remove(produto);
 	}
 
-	public void removeById(String id) {
+	public void removeById(ProdutoId id) {
 		Optional<Produto> produto = produtos.stream()
-				.filter(p -> p.getProdutoId().getId().equals(id)).findAny();
+				.filter(p -> p.getProdutoId().equals(id)).findAny();
 		if (produto.isPresent())
 		produtos.remove(produto.get());
 	}
 
-	public Produto findById(String id) {
+	public Produto findById(ProdutoId id) {
 		return produtos.stream()
-				.filter(p -> p.getProdutoId().getId().equals(id)).findAny().get();
+				.filter(p -> p.getProdutoId().equals(id)).findAny().get();
 	}
 
 	public List<Produto> findAll() {
-		return Collections.unmodifiableList(produtos);
+		//return Collections.unmodifiableList(produtos);
+		return CollectionProxyFactory.createUnmodifiedList(produtos);
 	}
+
+	
 }

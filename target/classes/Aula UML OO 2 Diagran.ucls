@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="br.com.aula2.model.Produto" project="aulaUMLOO" 
     file="/aulaUMLOO/src/main/java/br/com/aula2/model/Produto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="179" x="892" y="238"/>    
+    <position height="-1" width="-1" x="314" y="251"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,84 +12,65 @@
   </class>  
   <class id="2" language="java" name="br.com.aula2.model.ProdutoId" project="aulaUMLOO" 
     file="/aulaUMLOO/src/main/java/br/com/aula2/model/ProdutoId.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="139" x="892" y="449"/>    
+    <position height="-1" width="-1" x="573" y="150"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="br.com.aula2.repository.impl.ProdutoRepositoryPersistent" project="aulaUMLOO" 
-    file="/aulaUMLOO/src/main/java/br/com/aula2/repository/impl/ProdutoRepositoryPersistent.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="171" width="189" x="366" y="27"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="4" language="java" name="br.com.aula2.repository.ProdutoRepository" project="aulaUMLOO" 
+  <interface id="3" language="java" name="br.com.aula2.repository.ProdutoRepository" project="aulaUMLOO" 
     file="/aulaUMLOO/src/main/java/br/com/aula2/repository/ProdutoRepository.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="159" x="629" y="238"/>    
+    <position height="-1" width="-1" x="752" y="138"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="5" language="java" name="br.com.aula2.factory.ProdutoRepositoryFactory" project="aulaUMLOO" 
-    file="/aulaUMLOO/src/main/java/br/com/aula2/factory/ProdutoRepositoryFactory.java" binary="false" 
+  <class id="4" language="java" name="br.com.aula2.repository.impl.ProdutoRepositoryPersistent" project="aulaUMLOO" 
+    file="/aulaUMLOO/src/main/java/br/com/aula2/repository/impl/ProdutoRepositoryPersistent.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="257" x="595" y="27"/>    
+    <position height="-1" width="-1" x="876" y="408"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="br.com.aula2.repository.impl.ProdutoRepositoryTransient" project="aulaUMLOO" 
+  <class id="5" language="java" name="br.com.aula2.repository.impl.ProdutoRepositoryTransient" project="aulaUMLOO" 
     file="/aulaUMLOO/src/main/java/br/com/aula2/repository/impl/ProdutoRepositoryTransient.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="171" width="183" x="892" y="27"/>    
+    <position height="-1" width="-1" x="626" y="402"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="7" language="java" name="br.com.aula2.factory.RepositoryType" project="aulaUMLOO" 
-    file="/aulaUMLOO/src/main/java/br/com/aula2/factory/RepositoryType.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="166" x="1115" y="27"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </enumeration>  
-  <association id="8">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="9" name="produtos"/>      
-      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+  <association id="6">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="7" name="produtos"/>      
+      <multiplicity id="8" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="11">    
+  <realization id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="10">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="12" name="produtoId"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+      <attribute id="11" name="produtoId"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="14">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <realization id="15">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
+  <realization id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

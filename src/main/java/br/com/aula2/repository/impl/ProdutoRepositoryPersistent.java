@@ -3,6 +3,7 @@ package br.com.aula2.repository.impl;
 import java.util.List;
 
 import br.com.aula2.model.Produto;
+import br.com.aula2.model.ProdutoId;
 import br.com.aula2.repository.ProdutoRepository;
 
 public class ProdutoRepositoryPersistent implements ProdutoRepository {
@@ -15,11 +16,11 @@ public class ProdutoRepositoryPersistent implements ProdutoRepository {
 
 	}
 
-	public void removeById(String id) {
+	public void removeById(ProdutoId id) {
 
 	}
 
-	public Produto findById(String id) {
+	public Produto findById(ProdutoId id) {
 		return null;
 	}
 
